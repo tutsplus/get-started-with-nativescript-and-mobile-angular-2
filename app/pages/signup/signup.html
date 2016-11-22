@@ -1,0 +1,14 @@
+<StackLayout >
+    <Image src="~/images/contacts.png" stretch="none" horizontalAlignment="center"></Image>
+
+    <TextField  hint="Enter Email Address" keyboardType="email" [(ngModel)]="email" autocorrect="false" autocapitalizationType="none"></TextField>
+  
+    <TextField  hint="Enter Password" secure="true" [(ngModel)]="password"></TextField>
+
+    <TextField  hint="Confirm Password" secure="true" [(ngModel)]="confirmPassword"></TextField>
+
+    <Button text="SignUp" (tap)="register()"></Button>
+
+    <Button text="Cancel" (tap)="cancel()"></Button>
+  
+</StackLayout>

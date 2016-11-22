@@ -1,0 +1,26 @@
+<StackLayout >
+    <ActionBar title="Notes"></ActionBar>
+    <Button text="ADD NOTE" (tap)="add()"></Button>
+    
+    
+    
+    
+        
+    
+        <ListView [items]="notes">
+            <template let-item="item">
+                <GridLayout rows="30,*," columns="*">
+                    <Label [text]="item.title" row="0" ></Label>
+                    <TextView [text]="item.note" editable="false" row="2" ></TextView>
+                </GridLayout>
+            </template>
+        </ListView>
+
+
+    
+
+  
+  
+  
+  
+</StackLayout>

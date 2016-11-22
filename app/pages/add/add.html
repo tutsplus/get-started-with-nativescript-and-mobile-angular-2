@@ -1,0 +1,12 @@
+<StackLayout>
+    <ActionBar title="Add a Note"></ActionBar>
+    
+    <GridLayout rows="60, 200" columns="*">
+        <TextField hint="Type Title here"  keyboardType="done" text="" row="0" col="1" [(ngModel)]="title"></TextField>
+        <TextView hint="Enter note here" keyboardType="done" text="" editable="true" row="1" col="0" colSpan="2" [(ngModel)]="note"></TextView>
+    </GridLayout>
+
+    <Button text="Add Note" (tap)="addNote()"></Button>
+    <Button text="Cancel" (tap)="cancel()" ></Button>
+
+</StackLayout>
